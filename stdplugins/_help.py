@@ -26,8 +26,7 @@ async def _(event):
     help_string = """@UniBorg ( **Custom Built By** @mad_noob ) \n**Verified Account**: ✅
 Pithun {}
 Talethrun {}
- 
-**Custom Built Fork**: https://github.com/prono69/PepeBot """.format(
+ **Custom Built Fork**: https://github.com/Deepumad77/Popcorn-Bot """.format(
         sys.version,
         __version__
     )
