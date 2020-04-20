@@ -5,13 +5,11 @@ from telethon.tl.types import ChannelParticipantsAdmins
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="alive"))
+@borg.on(admin_cmd("alive"))
 async def _(event):
     if event.fwd_from:
         return
-       mentions = " █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n█░░║║║╠─║─║─║║║║║╠─░░█\n█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\n█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n█░░░░░░░░░░░░░░░░░░░░█\n█░░░User: @mad_noob  ░░░░░░░█\n█░░░Server:Online  ░░░░░░░░█\n█░░░Telethon version: 1.11.3░░█\n█░░░Python: 3.8.2  ░░░░░░░░█\n█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ "
-     
-
+    mentions = "█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█\n█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n█░░║║║╠─║─║─║║║║║╠─░░█\n█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\n█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n█░░░░░░░░░░░░░░░░░░░░█\n█░░░User: @mad_noob  ░░░░░░░█\n█░░░Server:Online  ░░░░░░░░█\n█░░░Telethon version: 1.11.3░░█\n█░░░Python: 3.8.2  ░░░░░░░░█\n█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█"
     chat = await event.get_input_chat()
     async for x in borg.iter_participants(chat, filter=ChannelParticipantsAdmins):
         mentions += f""
@@ -22,3 +20,26 @@ async def _(event):
     else:
         await event.reply(mentions)
     await event.delete()
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+  
+
+
+
