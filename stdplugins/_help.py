@@ -23,10 +23,10 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = "****:"
-    help_string = """@UniBorg ( **Custom Built By** @mad_noob ) \n**Verified Account**: ✅
+    help_string = """@UniBorg ( **Custom Built By** ) See Below 👇 \n**Verified Account**: ✅
 Pithun {}
 Talethrun {}
- **Custom Built Fork**: https://github.com/Deepumad77/Popcorn-Bot """.format(
+ ** Sexy Boy @mad_noob **
         sys.version,
         __version__
     )
