@@ -26,7 +26,7 @@ async def _(event):
     help_string = """@UniBorg ( **Custom Built By** ) See Below 👇 \n**Verified Account**: ✅
 Pithun {}
 Talethrun {}
- ** Sexy Boy @urmadbaby_hero **     """.format(
+ ** Sexy Boy @Baby_xD **     """.format(
         sys.version,
         __version__
     )
